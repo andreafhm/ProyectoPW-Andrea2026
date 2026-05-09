@@ -20,7 +20,7 @@ Before(async function () {
   }
 
   this.browser = await browserType.launch({
-    headless: false
+    headless: true, // Cambia a false si quieres ver el navegador durante las pruebas  
   });
 
   this.context = await this.browser.newContext();
