@@ -39,7 +39,7 @@ jobs:
           name: cucumber-html-report
           path: reports/html-report
 
-      -name: Deploy report to GitHub Pages
+      - name: Deploy report to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
